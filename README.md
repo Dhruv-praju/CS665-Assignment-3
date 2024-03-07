@@ -1,29 +1,35 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Dhruv Prajapati       |
+| Date         | 03/06/2024                 |
+| Course       |  Spring      |
+| Assignment 3 |                            |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+
+A company serves various customer segments, including Business, Returning, Frequent, New, and VIP. The management requires an efficient solution to send personalized emails to their customers. To achieve this, they require a custom application that can automatically generate emails based on a base template, tailored to each type of customer.
+The task is to develop the "Email Generation" application to fulfill this requirement by generating automated emails for different customer segments.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/Dhruv-praju/CS665-Assignment-3
 
 # Implementation Description 
-
 
 For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+    -   Application is designed keeping in mind that it could grow. In Future new customer types be easily added (by just doing concrete implementation of **CustomerSegment** interface) without having to change the existing code.
+    - Application is able to generate emails of one customer segment and switch to another segment during runtime and produce unique emails for each segment.
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+    -   The application has UML class diagrams to understand the application design. And it's folder structure is implemented according to the design. Also proper documentation of each file with its properties and methods are documented with brief description of its behaviour.
 - Describe how you have avoided duplicated code and why it is important.
+    Extracting the varying behaviour into seperate class hierarchy and associate it with the original class, reduces the duplicated code.
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+    -   Strategy design pattern is used. The primary goal of the application is to generate emails but each customer type has its own way(or strategy) to generate email as per their requirements. Hence strategy patterns helps us to achieve that.
 
 
 # Maven Commands

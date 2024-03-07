@@ -46,9 +46,10 @@ public class TestEmailGenerator {
 
         String email = emailGenerator.generateEmail();
 
-        System.out.println(email);    }
+        System.out.println(email);    
+    }
     @Test
-    public void testChangeCustomer(){
+    public void testChangeInCustomerType(){
         VIP vipCustomer = new VIP("Elon Musk");
         EmailGenerator emailGenerator = new EmailGenerator(vipCustomer);
         Business businessCustomer = new Business("Intelli Soft Inc.");
