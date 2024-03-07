@@ -1,7 +1,7 @@
 /**
- * Name: FIRST_NAME LAST_NAME
+ * Name: Dhruv Prajapati
  * Course: CS-665 Software Designs & Patterns
- * Date: MM/DD/YYYY
+ * Date: 03/06/2024
  * File Name: Main.java
  * Description: Write a description for this class
  */

@@ -26,7 +26,7 @@ be easily added or removed in the future.
 easy for others to read and maintain.
     -   The application has UML class diagrams to understand the application design. And it's folder structure is implemented according to the design. Also proper documentation of each file with its properties and methods are documented with brief description of its behaviour.
 - Describe how you have avoided duplicated code and why it is important.
-    Extracting the varying behaviour into seperate class hierarchy and associate it with the original class, reduces the duplicated code.
+    -   Extracting the varying behaviour into seperate class hierarchy and associate it with the original class, reduces the duplicated code.
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
     -   Strategy design pattern is used. The primary goal of the application is to generate emails but each customer type has its own way(or strategy) to generate email as per their requirements. Hence strategy patterns helps us to achieve that.
